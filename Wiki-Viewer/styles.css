@@ -1,12 +1,12 @@
 :root {
-    /* var(); */
-  --main-bg: #1D3557;
-  --font-color: #1D3557;
-  --header-bg: #A8DADC;
-  --search-bg: #A8DADC;
-  --search-bg-hover: #56AAAD;
-  --search-buttons: #1D3557;
-  --search-buttons-hover: #A8DADC;
+  /* var(); */
+  --main-bg: #1d3557;
+  --font-color: #1d3557;
+  --header-bg: #a8dadc;
+  --search-bg: #a8dadc;
+  --search-bg-hover: #56aaad;
+  --search-buttons: #1d3557;
+  --search-buttons-hover: #a8dadc;
   --link-buttons: yellow;
   --link-buttons-hover: yellow;
   --title-text: yellow;
@@ -20,7 +20,6 @@ body {
   margin: 0 auto;
   text-align: center;
   background-color: var(--main-bg);
-
 }
 
 .searchbar {
@@ -32,44 +31,47 @@ body {
 }
 
 .searchform {
-    margin: 10px;
+  margin: 10px;
 }
 
 .searchfield__container {
-    background-color: var(--main-bg);
-    border-radius: 10px;
-    margin: 0 30%;
-    padding: 10px 5px 15px;
-    color: #A8DADC;
-    font-size: 20px;
+  background-color: var(--main-bg);
+  border-radius: 10px;
+  margin: 0 30%;
+  padding: 10px 5px 15px;
+  color: #a8dadc;
+  font-size: 20px;
 }
 
-input[type=text], select {
-    width: 200px;
-    padding: 12px 20px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+input[type="text"],
+select {
+  width: 200px;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 #wikiSearchButton {
-    background-color: var(--search-buttons);
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: Helvetica;
-    font-size: 16px;
+  background-color: var(--search-buttons);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 16px;
 }
 
 #wikiSearchButton:hover,
 #wikiSearchButton:active {
-    background-color: var(--search-buttons-hover);
-    color: var(--search-buttons);
+  background-color: var(--search-buttons-hover);
+  color: var(--search-buttons);
+  border: 1px solid;
+  border-color: #1d3557;
 }
 
 .search__container {
@@ -80,7 +82,7 @@ input[type=text], select {
   box-shadow: 5px 5px;
 }
 .search__container:hover {
-    background-color: var(--search-bg-hover);
+  background-color: var(--search-bg-hover);
 }
 
 .search__title {
@@ -100,6 +102,7 @@ input[type=text], select {
 a:link,
 a:visited {
   background-color: var(--search-buttons);
+  border: 1px solid transparent;
   color: white;
   padding: 14px 25px;
   text-align: center;
@@ -114,4 +117,6 @@ a:hover,
 a:active {
   background-color: var(--search-buttons-hover);
   color: var(--search-buttons);
+  border: 1px solid;
+  border-color: #1d3557;
 }
