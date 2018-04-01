@@ -1,0 +1,51 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+/* img, h1, h2, h3, p, li, ul {
+  margin: 0;
+  padding : 0;
+} */
+
+body {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+}
+.projects__list {
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  margin: 5px;
+}
+
+a:link,
+a:visited {
+  background-color: #1d3557;
+  color: white;
+  padding: 25px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 16px;
+  border-radius: 5px;
+
+min-width: 250px;
+}
+
+a:hover,
+a:active {
+  background-color: rgb(40, 87, 153);
+}
