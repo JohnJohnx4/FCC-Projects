@@ -1,0 +1,117 @@
+:root {
+    /* var(); */
+  --main-bg: #1D3557;
+  --font-color: #1D3557;
+  --header-bg: #E63946;
+  --search-bg: #A8DADC;
+  --search-bg-hover: #56AAAD;
+  --search-buttons: #1D3557;
+  --search-buttons-hover: #A8DADC;
+  --link-buttons: yellow;
+  --link-buttons-hover: yellow;
+  --title-text: yellow;
+  --excerpt-text: yellow;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--main-bg);
+
+}
+
+.searchbar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: var(--header-bg);
+}
+
+.searchform {
+    margin: 10px;
+}
+
+.searchfield__container {
+    background-color: var(--main-bg);
+    border-radius: 10px;
+    margin: 0 30%;
+    padding: 10px 5px 15px;
+    color: #A8DADC;
+    font-size: 20px;
+}
+
+input[type=text], select {
+    width: 200px;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#wikiSearchButton {
+    background-color: var(--search-buttons);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Helvetica;
+    font-size: 16px;
+}
+
+#wikiSearchButton:hover,
+#wikiSearchButton:active {
+    background-color: var(--search-buttons-hover);
+    color: var(--search-buttons);
+}
+
+.search__container {
+  background-color: var(--search-bg);
+  margin: 10px 10%;
+  padding: 5px 20px;
+  border-radius: 10px 20px;
+  box-shadow: 5px 5px;
+}
+.search__container:hover {
+    background-color: var(--search-bg-hover);
+}
+
+.search__title {
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--font-color);
+}
+.search__extract {
+  text-align: left;
+  font-family: Helvetica;
+}
+.search__link {
+  text-align: left;
+}
+
+a:link,
+a:visited {
+  background-color: var(--search-buttons);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+a:hover,
+a:active {
+  background-color: var(--search-buttons-hover);
+  color: var(--search-buttons);
+}

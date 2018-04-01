@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Comfortaa');
+
+
+body {
+    background-color: #4E4B5C;
+}
+
+.header__image {
+    width: 40%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.quote__header {
+    background-color: #BEA2C2;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+.quote__area {
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    background-color: #4381C1;
+    vertical-align: baseline;
+    border-radius:3px;
+    position:relative;
+    margin:8% 8% auto 8%;
+}
+
+.quote__text {
+  padding: 10px 17px 10px 10px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 26px;
+}
+
+.quote__author {
+  padding: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+}
+
+.quote__button {
+    height:38px;
+    border:none;
+    border-radius:3px;
+    color:#BEA2C2;
+    background-color:#4E4B5C;
+    outline:none;
+    font-size:0.85em;
+    padding: 8px 18px 6px 18px;
+    margin-top:30px;
+    opacity:1;
+    cursor:pointer;
+    &:hover {
+        opacity:0.9;
+    }
+}
+
+colors {
+    color: #4381C1;
+    color: #BDADEA;
+    color: #BEA2C2;
+    color: #A37871;
+    color: #4E4B5C;
+}

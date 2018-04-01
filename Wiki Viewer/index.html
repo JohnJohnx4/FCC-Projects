@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Wiki search</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <script defer="defer" src="./app.js"></script>
+    <div class="searchbar">
+        <form class="searchform">
+            <div class="searchfield__container">
+                Search Wikipedia:
+                <input id="wikiSearchField" type="text" name="userSearch" placeholder="Search" />
+            </div>
+            <br>
+            <input class="button__submit" id="wikiSearchButton" type="submit" value="Submit" />
+            <a class="searchform__random" href="https://en.wikipedia.org/wiki/Special:Random">Random</a>
+        </form>
+    </div>
+    <div class="wikiResultsBox">
+        <div id="wikiResultsRoot" />
+    </div>
+</body>
+
+</html>
