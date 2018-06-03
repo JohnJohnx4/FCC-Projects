@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1 id="title">
+            John's Form
+        </h1>
+        <p id="description">
+            A form for a Free Code Camp Project
+        </p>
+    </div>
+
+    <div class="form">
+        <form id="survey-form">
+
+            <div class="form_section">
+                <div class="labels">
+                    <label id="name-label">* Name:</label>
+                </div>
+
+                <div class="inputs">
+                    <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+                </div>
+
+                <div class="labels">
+                    <label id="email-label">* Email:</label>
+                </div>
+                <div class="inputs">
+                    <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+                </div>
+
+                <div class="labels">
+                    <label id="number-label">Age:</label>
+                </div>
+                <div class="inputs">
+                    <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+                </div>
+            </div>
+
+            <div class="form_section">
+                <div class="labels">
+                    <label for="career">Which best describes you?</label>
+                </div>
+                <div class="dropdown_inputs">
+                    <select id="dropdown" name="career" class="dropdown">
+                        <option disabled value>Select an option</option>
+                        <option value="student">Student</option>
+                        <option value="job">Part Time Job</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form_section">
+                <div class="labels">
+                    <label for="mood">How are you today?</label>
+                </div>
+                <div class="inputs">
+
+                    <ul>
+                        <li class="radio">
+                            <label>
+                                <input name="radio-buttons" value="1" type="radio" class="radio_checkbox">Amazing
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                <input name="radio-buttons" value="2" type="radio" class="radio_checkbox">Good
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                <input name="radio-buttons" value="3" type="radio" class="radio_checkbox">Leave me alone.
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="form_section">
+
+                <div class="labels">
+                    <label for="preferences">What games do you like?
+                        <br>(Check all that apply):
+                    </label>
+                </div>
+
+                <div class="inputs">
+                    <ul id="preferences">
+                        <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="radio_checkbox">Action</label></li>
+
+                        <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="radio_checkbox">RPG</label></li>
+
+                        <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="radio_checkbox">JRPG</label></li>
+
+                        <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="radio_checkbox">Shooter</label></li>
+
+                        <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="radio_checkbox">MOBA</label></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="form_section">
+                <div class="labels">
+                    <label for="comments">How did I do?</label>
+                </div>
+                <textarea id="comments" class="input-field" name="comment" placeholder="Enter text here..."></textarea>
+            </div>
+            <div>    
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

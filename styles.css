@@ -10,9 +10,11 @@ html {
 header {
   background-color: #1d3557;
   color:white;
+  margin: 0 -10px 0 -10px;
 }
 
 body {
+  background-color: #2659a0;
   text-align: center;
   width: 100%;
   height: 100%;

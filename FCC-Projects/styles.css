@@ -1,0 +1,104 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	background-color: #1d3557;
+	color: white;
+	margin: 0 -10px 0 -10px;
+}
+
+body {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	background-color: #2659a0;
+}
+.projects__list {
+	padding: 10px 0;
+	text-align: center;
+  background-color: #2659a0;
+  margin: 0 20%;
+}
+
+ul {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.link__container {
+	list-style: none;
+	margin: 5px;
+	height: 100%;
+	vertical-align: middle;
+}
+
+a:link,
+a:visited {
+	background-color: #1d3557;
+	color: white;
+	padding: 25px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: Helvetica;
+	font-size: 16px;
+	border-radius: 5px;
+	min-width: 250px;
+}
+
+a:hover,
+a:active {
+	background-color: rgb(40, 87, 153);
+}
+
+.dropbtn {
+  background-color: #1d3557;
+	color: white;
+	padding: 25px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: Helvetica;
+	font-size: 16px;
+	border-radius: 5px;
+	min-width: 250px;
+}
+
+.dropdown {
+	position: relative;
+  display: inline-block;
+  list-style: none;
+	margin: 5px;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 160px;
+	z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  margin: 5px 0;
+	padding: 15px 25px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: rgb(40, 87, 153);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: rgb(40, 87, 153);
+}
