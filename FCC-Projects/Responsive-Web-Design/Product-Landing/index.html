@@ -1,30 +1,29 @@
 <head>
-    <script defer="defer" src="./app.js"></script>
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <header id="header">
         <div class="logo">
-            <img src="../../../assets/water.svg" alt="Company logo" id="header-img">
+            <img class="logo_img" src="http://svgur.com/i/6xJ.svg" alt="Company logo" id="header-img">
         </div>
 
         <nav id="nav-bar">
             <ul>
                 <li>
+                    <a href="#header" class="nav-link">Top</a>
+                </li>
+                <li>
                     <a href="#video" class="nav-link">Video</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link">Link2</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">Link3</a>
+                    <a href="#options" class="nav-link">Options</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <div>
+    <div class="container">
         <div class="navbar_space"></div>
         <div id="video">
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/odx2xI3CcLM?rel=0" frameborder="0" allow="autoplay; encrypted-media"
@@ -32,35 +31,50 @@
         </div>
 
         <div class="form">
+            <h2>Enter your email for more info!</h2>
             <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <input name="email" id="email" type="email" placeholder="Enter your email address" required/>
                 <input id="submit" type="submit" value="Get Started" class="btn"></input>
             </form>
         </div>
 
-        <div class="options_container">
+        <div class="options_container" id="options">
             <div class="options">
-                <h2>
+                <div class="options_header">
                     Option 1
-                </h2>
-                <p>
-                    Jolly Roger lee log booty provost fire in the hole holystone Davy Jones' Locker swing the lead nipperkin. Pink league snow
-                    transom matey cackle fruit Privateer galleon spike bring a spring upon her cable. Skysail cable salmagundi
-                    Shiver me timbers Plate Fleet flogging Davy Jones' Locker Buccaneer interloper lanyard.
-                </p>
+                </div>
+                <div class="options_body">
+                    Jolly Roger lee log booty provost</br>
+                    </br>
+                    fire in the hole holystone</br>
+                    </br>
+                    Davy Jones' Locker swing the lead</br>
+                    </br>
+                    Shiver me timbers Plate Fleet</br>
+                    </br>
+                </div>
+                 <a href="#" class="options_link">Find Out More!</a>
+            </br>
             </div>
-
+            
             <div class="options">
-                <h2>
+                <div class="options_header">
                     Option 2
-                </h2>
-                <p>
-                    Belaying pin Jack Tar swab bounty loaded to the gunwalls line quarter mutiny reef lateen sail. Lanyard hogshead log league
-                    pillage man-of-war walk the plank bounty code of conduct boom. Snow boatswain quarter killick landlubber
-                    or just lubber Jack Tar long boat parrel topgallant dead men tell no tales.
-                </p>
+                </div>
+                <div class="options_body">
+                    Belaying pin Jack Tar swab</br>
+                    </br>
+                    Lanyard hogshead log league</br>
+                    </br>
+                    code of conduct boom. Snow boatswain</br>
+                    </br>
+                    quarter killick landlubber</br>
+                    </br>
+                </div>
+                 <a href="#" class="options_link">Find Out More!</a>
+            </br>
             </div>
-
+            
         </div>
     </div>
 </body>
