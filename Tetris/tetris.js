@@ -1,30 +1,55 @@
 const canvas = document.getElementById("tetris");
 const context = canvas.getContext("2d");
 
+let bgm_tetris_theme = document.getElementById("music_tetris_theme");
+bgm_tetris_theme.volume = 0.3;
 const sfx_drop = document.getElementById("sfx_drop");
 const sfx_clear = document.getElementById("sfx_clear");
 const sfx_move = document.getElementById("sfx_move");
 const sfx_rot = document.getElementById("sfx_rot");
 const sfx_lose = document.getElementById("sfx_lose");
 
+const button_vol_up = document.getElementById('button_vol_up') ;
+const button_vol_down = document.getElementById('button_vol_down') ;
+const button_vol_start = document.getElementById('button_vol_start') ;
+const button_vol_stop = document.getElementById('button_vol_stop') ;
+
+
+button_vol_up.addEventListener("click", function() {
+    if (bgm_tetris_theme.volume < 1 && bgm_tetris_theme.volume > 0) bgm_tetris_theme.volume = (bgm_tetris_theme.volume * 10 + 1) / 10;
+    console.log(bgm_tetris_theme.volume);
+});
+button_vol_down.addEventListener("click", function() {
+    if (bgm_tetris_theme.volume < 1 && bgm_tetris_theme.volume > 0) bgm_tetris_theme.volume = (bgm_tetris_theme.volume * 10 - 1) / 10;
+    console.log(bgm_tetris_theme.volume);
+});
+button_vol_start.addEventListener("click", function() {
+    bgm_tetris_theme.play();
+});
+button_vol_stop.addEventListener("click", function() {
+    bgm_tetris_theme.pause();
+});
+
+
+
 context.scale(20, 20);
 
 function arenaSweep() {
-    let rowCount = 1;
-    outer: for (let y = arena.length - 1; y > 0; --y) {
-        for(let x = 0; x < arena[y].length; ++x) {
-            if (arena[y][x] === 0) {
-                continue outer;
-            }
-        }
-        const row = arena.splice(y, 1)[0].fill(0);
-        arena.unshift(row);
-        ++y;
-        sfx_clear.play();
+	let rowCount = 1;
+	outer: for (let y = arena.length - 1; y > 0; --y) {
+		for (let x = 0; x < arena[y].length; ++x) {
+			if (arena[y][x] === 0) {
+				continue outer;
+			}
+		}
+		const row = arena.splice(y, 1)[0].fill(0);
+		arena.unshift(row);
+		++y;
+		sfx_clear.play();
 
-        player.score += rowCount * 10;
-        rowCount *= 2;
-    }
+		player.score += rowCount * 10;
+		rowCount *= 2;
+	}
 }
 
 function collide(arena, player) {
@@ -98,18 +123,18 @@ function playerDrop() {
 	player.pos.y++;
 	if (collide(arena, player)) {
 		player.pos.y--;
-        merge(arena, player);
-        sfx_drop.play();
+		merge(arena, player);
+		sfx_drop.play();
 		playerReset();
-        player.pos.y = 0;
-        arenaSweep();
-        updateScore();
+		player.pos.y = 0;
+		arenaSweep();
+		updateScore();
 	}
 	dropCounter = 0;
 }
 
 function playerMove(dir) {
-    sfx_move.play();
+	sfx_move.play();
 	player.pos.x += dir;
 	if (collide(arena, player)) {
 		player.pos.x -= dir;
@@ -124,15 +149,15 @@ function playerReset() {
 		((arena[0].length / 2) | 0) - ((player.matrix[0].length / 2) | 0);
 
 	if (collide(arena, player)) {
-        arena.forEach(row => row.fill(0));
-        player.score = 0;
-        sfx_lose.play();
-        updateScore();
+		arena.forEach(row => row.fill(0));
+		player.score = 0;
+		sfx_lose.play();
+		updateScore();
 	}
 }
 
 function playerRotate(dir) {
-    sfx_rot.play();
+	sfx_rot.play();
 	const pos = player.pos;
 	let offset = 1;
 	rotate(player.matrix, dir);
@@ -172,8 +197,8 @@ function update(time = 0) {
 
 	dropCounter += deltaTime;
 	if (dropCounter > dropInterval) {
-        playerDrop();
-        // player.pos.y++;
+		playerDrop();
+		// player.pos.y++;
 		// dropCounter = 0;
 	}
 
@@ -182,7 +207,7 @@ function update(time = 0) {
 }
 
 function updateScore() {
-    document.getElementById('score').innerText = player.score;
+	document.getElementById("score").innerText = player.score;
 }
 
 const colors = [
@@ -200,8 +225,8 @@ const arena = createMatrix(12, 20);
 
 const player = {
 	pos: { x: 5, y: 0 },
-    matrix: createPiece("I"),
-    score:0
+	matrix: createPiece("I"),
+	score: 0
 };
 
 document.addEventListener("keydown", event => {
@@ -222,8 +247,10 @@ updateScore();
 
 const start_button = document.getElementById("start_button");
 
-start_button.addEventListener("click",function() {
-    sfx_lose.play();
-    update();
-    start_button.parentNode.removeChild(start_button);
+start_button.addEventListener("click", function() {
+	sfx_lose.play();
+	bgm_tetris_theme.play();
+
+	update();
+	start_button.parentNode.removeChild(start_button);
 });

@@ -6,6 +6,9 @@
 </head>
 
 <body>
+    <audio id="music_tetris_theme">
+        <source src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Tetris_theme.ogg" type="audio/ogg">
+    </audio>
     <audio id="sfx_drop">
         <source src="assets/SFX_PieceMoveLR.ogg" type="audio/ogg">
     </audio>
@@ -18,9 +21,6 @@
     <audio id="sfx_clear">
         <source src="assets/SFX_SpecialLineClearSingle.ogg" type="audio/ogg">
     </audio>
-    <audio id="sfx_start">
-        <source src="assets/SFX_GameStart.ogg" type="audio/ogg">
-    </audio>
     <audio id="sfx_lose">
         <source src="assets/SFX_GameOver.ogg" type="audio/ogg">
     </audio>
@@ -29,6 +29,13 @@
         <div id="score"></div>
     </div>
     <canvas id="tetris" width="240" height="400"></canvas>
+    <div id="volume_control">
+        <p>Volume Control</p>
+        <button id="button_vol_up">Volume Up</button>
+        <button id="button_vol_down">Volume Down</button>
+        <button id="button_vol_start">Play</button>
+        <button id="button_vol_stop">Pause</button>
+    </div>
     <script src="tetris.js"></script>
 
 </body>

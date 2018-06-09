@@ -8,7 +8,7 @@ body {
 
 canvas {
 	border: solid 0.2em white;
-	height: 90vh;
+	height: 83vh;
 }
 
 .menu {
@@ -18,9 +18,14 @@ canvas {
 }
 
 button {
-    margin: 0 1%;
+    margin: 0;
 }
 
 #score {
     margin: 0 1%;
+}
+
+p {
+	margin: 5px 0 0;
+	font-size: 14px;
 }
