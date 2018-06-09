@@ -3,6 +3,7 @@ const context = canvas.getContext("2d");
 
 let bgm_tetris_theme = document.getElementById("music_tetris_theme");
 bgm_tetris_theme.volume = 0.3;
+bgm_tetris_theme.loop = true;
 const sfx_drop = document.getElementById("sfx_drop");
 const sfx_clear = document.getElementById("sfx_clear");
 const sfx_move = document.getElementById("sfx_move");
