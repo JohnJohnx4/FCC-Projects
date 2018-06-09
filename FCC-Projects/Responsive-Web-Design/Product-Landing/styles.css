@@ -1,0 +1,143 @@
+body {
+    text-align: center;
+    margin: 0;
+    background-color: #51DAFF;
+    font-family: arial;
+}
+
+ul {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4475FF;
+    width: 100%;
+}
+
+#header-img {
+  width: 75px;
+  padding: 0;
+  margin: 0;
+}
+
+logo_img {
+  width: 100%;
+  height: 100%;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.container {
+    margin: 150px 20% 5%;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: #4475FF;
+}
+
+#video {
+    margin: 0 10%;
+    padding: 20px;
+    background-color: #3E97E8;
+    border-radius: 5px;
+}
+
+.form {
+    margin: 1% 25%;
+    padding: 0.003% 1%;
+    background-color: #44FFC0;
+    border-radius: 10px;
+}
+
+.options_container {
+    background-color: #3E97E8;
+    margin: 3% 20%;
+    padding: 1%;
+    border-radius: 5px;
+    
+}
+
+.options {
+    background-color: #3EE8DF;
+    margin:1% 5%;
+    padding:0;
+    border-radius: 5px;
+}
+.options_header {
+    font-size: 20px;
+    font-weight:bold;
+    margin: 5% 0;
+    padding: 5%;
+}
+.options_body {
+    font-size: 14px;
+}
+
+
+
+
+a:link,
+a:visited {
+  background-color: var(--search-buttons);
+  border: 1px solid transparent;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+a:hover,
+a:active {
+  border: 1px solid;
+  border-color: #1d3557;
+}
+
+a.options_link {
+    background-color: #1d3557;
+    margin: 5%;
+}
+
+@media only screen and (max-width: 1000px) {
+    iframe {
+        width: 375px;
+        height: 236px;
+    }
+
+    .container {
+        margin: 15% 5% 0;
+    }
+
+    #video {
+        padding: 1%;
+        margin: 0 10%;
+    }
+
+    .form {
+        margin: 10%;
+    }
+
+    .options_container {
+        margin: 10%;
+    }
+}
