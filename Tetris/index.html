@@ -1,9 +1,36 @@
 <html>
+
 <head>
     <title>Tetris</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
+    <audio id="sfx_drop">
+        <source src="assets/SFX_PieceMoveLR.ogg" type="audio/ogg">
+    </audio>
+    <audio id="sfx_move">
+        <source src="assets/SFX_PieceSoftDrop.ogg" type="audio/ogg">
+    </audio>
+    <audio id="sfx_rot">
+        <source src="assets/SFX_PieceRotateLR.ogg" type="audio/ogg">
+    </audio>
+    <audio id="sfx_clear">
+        <source src="assets/SFX_SpecialLineClearSingle.ogg" type="audio/ogg">
+    </audio>
+    <audio id="sfx_start">
+        <source src="assets/SFX_GameStart.ogg" type="audio/ogg">
+    </audio>
+    <audio id="sfx_lose">
+        <source src="assets/SFX_GameOver.ogg" type="audio/ogg">
+    </audio>
+    <div class="menu">
+        <button id="start_button">Start!</button>
+        <div id="score"></div>
+    </div>
     <canvas id="tetris" width="240" height="400"></canvas>
     <script src="tetris.js"></script>
+
 </body>
+
 </html>
