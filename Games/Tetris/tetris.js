@@ -31,8 +31,6 @@ button_vol_stop.addEventListener("click", function() {
     bgm_tetris_theme.pause();
 });
 
-
-
 context.scale(20, 20);
 
 function arenaSweep() {
