@@ -1,6 +1,36 @@
 const scrollable = document.getElementById("scrollable");
 const items = document.getElementById("items");
 
+function makeList() {
+  let idNum = 0;
+  let set1 = [];
+  let set2 = [];
+  for( let i = 65; i < 91; i++) {
+    let li = document.createElement("li");
+    li.setAttribute("id", idNum);
+    li.appendChild(document.createTextNode(String.fromCharCode(i)));
+    set1.push(li);
+    items.appendChild(li);
+    idNum++;
+  }
+  for( let i = 65; i < 91; i++) {
+    let li = document.createElement("li");
+    li.setAttribute("id", idNum);
+    li.appendChild(document.createTextNode(String.fromCharCode(i)));
+    set2.push(li);
+    items.appendChild(li);
+    idNum++;
+  }
+
+  
+
+  var elem = document.querySelector('#some-element');
+  elem.parentNode.removeChild(elem);  
+
+}
+
+makeList();
+
 function scrollMiddleWare(inertia = 0.8) {
   const delta = {
     x: null,
