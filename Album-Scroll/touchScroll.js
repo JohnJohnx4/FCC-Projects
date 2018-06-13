@@ -1,19 +1,18 @@
 function touchMiddleWare(inertia = 0.8) {
-  const delta = {
+  const touch_delta = {
     x: null,
     y: null
   };
 
-  const abs = {
+  const touch_abs = {
     x: 0,
     y: 0
   };
 
   return function onScroll(callback) {
     function notify() {
-      abs.x += delta.x;
-      abs.y += delta.y;
-      callback({ abs, delta });
+      touch_abs.x += touch_delta.x;
+      callback({ touch_abs, touch_delta });
     }
 
     let requestID;
@@ -22,8 +21,7 @@ function touchMiddleWare(inertia = 0.8) {
     }
 
     function update() {
-      delta.x *= inertia;
-      delta.y *= inertia;
+      touch_delta.x *= inertia;
       notify();
       start();
     }
@@ -36,9 +34,10 @@ function touchMiddleWare(inertia = 0.8) {
     let prevEvent;
 
     return function eventHandler(event) {
+      console.log(event);
       event.preventDefault();
       if (prevEvent) {
-          delta.x = event.changedTouches[0].clientX - prevEvent.changedTouches[0].clientX;
+          touch_delta.x = event.changedTouches[0].clientX - prevEvent.changedTouches[0].clientX;
         stop();
         notify();
       }
@@ -51,7 +50,6 @@ function touchMiddleWare(inertia = 0.8) {
 scrollable.addEventListener(
   "touchmove",
   touchMiddleWare(0.9)(scroll => {
-    items.style.left = `${scroll.abs.x}px`;
-
+    items.style.left = `${scroll.touch_abs.x}px`;
   })
 );

@@ -22,11 +22,8 @@ function makeList() {
     idNum++;
   }
 
-  
-
-  var elem = document.querySelector('#some-element');
-  elem.parentNode.removeChild(elem);  
-
+  // var elem = document.querySelector('#some-element');
+  // elem.parentNode.removeChild(elem);  
 }
 
 makeList();
