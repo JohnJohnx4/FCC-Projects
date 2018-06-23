@@ -1,36 +1,90 @@
+html {
+  background-color: #358FCA;
+  color: white;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+a:link,
+a:visited {
+	background-color: black;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+a:hover,
+a:active {
+  background-color: white;
+  color: black;
+}
+
+
 .navbar {
-  
+  background-color: black;
+  height: 70px;
 }
 
 .navbar__link {
 
 }
 
-.home {
 
+
+.home {
+  background-image: url("./assets/21stCentury.jpg");
+  background-repeat: no-repeat;
+  background-position: center; 
+  padding: 5% 0;
 }
 
 .home__quote_gen {
+  margin: 5%;
+  padding: 5%;
+  min-width: 30%;
+  max-width: 35%;
+  min-height: 25%;
+  font-size: 36px;
 
 }
 
 .home__blurb {
-
+  text-align: center;
+  font-family: helvetica;
+  font-size: 28px;
+  margin: 5% 5% 0;
 }
 
 
 
 .about {
+  background: linear-gradient(#200A35, #358FCA);
+  padding: 5%;
+}
 
+.about__title {
+  font-size: 36px;
+}
+
+.about__text {
+  max-width: 50%;
 }
 
 .timeline {
 
 }
 
+
+
 .projects {
 
 }
+
+
 
 .accomplishments {
 
