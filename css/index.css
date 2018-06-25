@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Hind:300|Poppins:300|East+Sea+Dokdo');
+@import url('https://fonts.googleapis.com/css?family=Hind:300|Poppins:300|Righteous|Open+Sans:150|Playfair+Display');
 /* LESS - http://lesscss.org style sheet */
 /* Palette color codes */
 /* Palette URL: http://paletton.com/#uid=33v0k0kp5Ize9U4k8OnuCCdxAq9 */
@@ -174,30 +174,83 @@ table {
 }
 .home__quote_gen {
   cursor: default;
-  font-family: "East Sea Dokdo", cursive;
+  font-family: "Playfair Display";
+  color: white;
   font-size: 42px;
   min-width: 30%;
   max-width: 35%;
   min-height: 25%;
 }
 .about {
-  background-image: linear-gradient(#358fca, rgba(53, 143, 202, 0)), url(../assets/EpcotPattern.jpg);
+  background-image: linear-gradient(#358fca, rgba(53, 143, 202, 0), #358fca), url(../assets/EpcotPattern.jpg);
   background-size: 80%;
   background-repeat: repeat-x;
+  color: white;
 }
 .about .blurb {
-  padding: 0 0 10%;
+  padding: 0 10% 10%;
   text-align: center;
-  font-size: 28px;
+  font-size: 32px;
   font-family: Hind;
-  color: #D08F00;
 }
-.about .title {
-  font-size: 36px;
+.about .section {
+  display: flex;
+  justify-content: space-evenly;
+}
+.about .section .text {
+  font-family: "Open Sans";
+  font-weight: 100;
+  font-size: 18px;
+  width: 50%;
+}
+.about .section .text .title {
+  font-family: Righteous;
+  font-size: 70px;
+  font-weight: bold;
+  color: #FFB20B;
+}
+.about .section .pics {
+  display: flex;
+}
+.about .section .pics .two .container .image {
+  width: 250px;
 }
 .projects {
+  text-align: center;
   background: linear-gradient(#358FCA, #075485);
-  padding: 350px 0;
+  padding: 10% 0 0;
+}
+.projects .title {
+  font-family: Righteous;
+  font-size: 55px;
+  color: #89C5EB;
+}
+.projects .main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.projects .main .container {
+  margin: 10px;
+  padding: 10px;
+  background-color: #FF9C5F;
+}
+.projects .main .image {
+  width: 350px;
+}
+.projects .mini {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.projects .mini .container {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: #FFB98E;
+}
+.projects .mini .image {
+  width: 200px;
 }
 .timeline {
   background: #075485;

@@ -1,24 +1,48 @@
 .about {
 	background-image: linear-gradient(
 			rgba(53, 143, 202, 1),
-			rgba(53, 143, 202, 0)
+			rgba(53, 143, 202, 0),
+			rgba(53, 143, 202, 1)
 		),
 		url(../assets/EpcotPattern.jpg);
 	background-size: 80%;
 	background-repeat: repeat-x;
+	color: white;
 
-  .blurb {
-		padding: 0 0 10%;
-    text-align: center;
-    font-size: 28px;
-    font-family: Hind;
-    color: @color-secondary-1-4;
-  }
-  
-	.title {
-		font-size: 36px;
+	.blurb {
+		padding: 0 10% 10%;
+		text-align: center;
+		font-size: 32px;
+		font-family: Hind;
 	}
 
-	.text {
+	.section {
+		display: flex;
+		justify-content: space-evenly;
+		
+		.text {
+			font-family: "Open Sans";
+			font-weight: 100;
+			font-size: 18px;
+			width: 50%;
+
+			.title {
+				font-family: Righteous;
+				font-size: 70px;
+				font-weight: bold;
+				color: @color-secondary-1-3;
+			}
+		}
+
+		.pics {
+			display: flex;
+			.two {
+				.container {
+					.image {
+						width: 250px;
+					}
+				}
+			}
+		}
 	}
 }
