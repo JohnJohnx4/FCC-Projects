@@ -1,0 +1,19 @@
+.home {
+  background: linear-gradient(#358fca, #033e7c);
+  padding: 5% 0;
+}
+.home__quote_gen {
+  margin: 5%;
+  padding: 5%;
+  min-width: 30%;
+  max-width: 35%;
+  min-height: 25%;
+  font-size: 36px;
+}
+.home__blurb {
+  text-align: center;
+  font-family: helvetica;
+  font-size: 28px;
+  margin: 5% 5% 0;
+  font-family: Hind;
+}

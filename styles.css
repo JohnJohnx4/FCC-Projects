@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300|Poppins:300');
+
 html {
   background-color: #358fca;
   color: white;
@@ -10,7 +12,7 @@ body {
 
 a:link,
 a:visited {
-  color: white;
+  color: #E63B00;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -23,6 +25,7 @@ a:active {
 
 .navbar {
   height: 50px;
+  font-family: Poppins;
 }
 
 .navbar__link {
@@ -49,6 +52,7 @@ a:active {
   font-family: helvetica;
   font-size: 28px;
   margin: 5% 5% 0;
+  font-family: Hind;
 }
 
 .about {

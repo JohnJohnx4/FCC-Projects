@@ -1,0 +1,10 @@
+.about {
+  background-color: #033e7c;
+  padding: 5%;
+}
+.about__title {
+  font-size: 36px;
+}
+.about__text {
+  max-width: 50%;
+}

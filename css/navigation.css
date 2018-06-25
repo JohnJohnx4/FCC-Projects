@@ -1,0 +1,19 @@
+a:link,
+a:visited {
+  color: #E63B00;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+a:hover,
+a:active {
+  color: black;
+}
+.navbar {
+  height: 50px;
+  font-family: Poppins;
+}
+.navbar__link {
+  margin: 10px;
+  padding: 10px;
+}
